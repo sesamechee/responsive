@@ -1,0 +1,27 @@
+@import "compass/css3";
+
+@function color($color-group, $index) {
+	@return nth( map-get($color-array, $color-group), $index );
+}
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+	@-moz-keyframes #{$name} {
+	@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+//background rgba
+@mixin rgba-bg($bg-color, $opacity) {
+	$bgcolor: rgba($bg-color, $opacity);
+	background-color: $bgcolor;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($bgcolor)}', endColorstr='#{ie-hex-str($bgcolor)}');
+}

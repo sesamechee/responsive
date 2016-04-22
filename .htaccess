@@ -1,0 +1,6 @@
+Options -Indexes
+DirectoryIndex index.php index.html disabled
+
+AddType text/html .html
+AddHandler server-parsed .html
+Options Indexes FollowSymLinks Includes

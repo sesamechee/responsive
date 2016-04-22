@@ -1,0 +1,125 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */     
+.headerWrapper {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #eee;
+
+	.mobile &,
+	.tablet & {
+		position: absolute;
+		top: -1000px;
+		width: 100%;
+		padding-top: 45px;
+		background-color: #fff;
+		@include transition(all 0.7s);
+	}
+	.mobile.menuOpen &,
+	.tablet.menuOpen & {
+		position: relative;
+		top: 0;
+	}
+	.header {
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		max-width: $max-desktop-width;
+		padding: 20px 0;
+	}
+}
+.logo {
+	.mobile &,
+	.tablet & {
+		display: none;
+	}
+}
+.menuList .menuItem {
+	display: inline-block;
+	padding: 15px;
+	text-align: center;
+	
+	.mobile &,
+	.tablet &{
+		display: block;
+	}
+	a {
+		display: block;
+		color: color(black,2);
+	}
+	&.current a,
+	&:hover a {
+		color: color(black,1);
+	}
+}
+
+/* ==========================================================================
+   MOBILE HEADER
+   ========================================================================== */     
+.mobileHeader {
+	position: fixed;
+	width: 100%;
+	height: 45px;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	border-bottom: 1px solid #ccced0;
+
+	.desktop & {
+		display: none;
+	}
+	.logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+	}
+	.menuBtn {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 30px;
+		height: 30px;
+
+		span {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 5px;
+			height: 3px;
+			width: 20px;
+			background: #666;
+			@include opacity(1);
+			@include transform(rotate(0deg));
+			@include transition(all 0.7s);
+
+			&.bar1 {
+				top: 6px;
+			}
+			&.bar2 {
+				top: 13px;
+			}
+			&.bar3 {
+				top: 20px;
+			}
+			.menuOpen &{
+				&.bar1 {
+					top: 13px;
+					width: 24px;
+					left: 3px;
+					@include transform(rotate(225deg));
+				}
+				&.bar2 {
+					@include opacity(0);
+				}
+				&.bar3 {
+					top: 13px;
+					width: 24px;
+					left: 3px;
+					@include transform(rotate(-225deg));
+				}
+			}
+		}
+	}
+}
