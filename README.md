@@ -1,8 +1,6 @@
 # Responsive Template
 > Support to IE9+
-
 > SCSS
-
 > SVG Icon
 
 ## imgSlider Usage
