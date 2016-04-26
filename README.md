@@ -1,7 +1,7 @@
 # Responsive Template
-Support to IE9+
-SCSS
-SVG Icon
+> Support to IE9+
+> SCSS
+> SVG Icon
 
 ## imgSlider Usage
     newSliderName = new imgSlider( $('target'), {
