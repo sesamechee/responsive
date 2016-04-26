@@ -3,7 +3,7 @@
 > SCSS
 > SVG Icon
 
-## imgSlider Usage
+## ImgSlider Usage
     newSliderName = new imgSlider( $('target'), {
       speed: 300,
       drag: true,
@@ -16,3 +16,9 @@
       afterSlideCallback: function(){
       }
     });
+    
+    gBannerSlider.transition( 'next' , idx );
+    gBannerSlider.transition( 'prev' , idx );
+    gBannerSlider.changePattern( idx );
+    gBannerSlider.slidesOnReady();
+    gBannerSlider.destroy();
