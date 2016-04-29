@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+<?php
+	include "../lang/lang.php";
+?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-hk">
 
 <head>
 
 	<!--META + CSS-->
-	<!--#include file="../include/common/include_css.html" -->
+	<?php include "../include/common/include_css.html" ?>
 
 	<!--Individual-->
 	<!--<link rel="stylesheet" href="../css/index.css" type="text/css" />-->
@@ -17,11 +19,11 @@
 	<div class="wrapper template">
 		
 		<div class="main">
-			<!--#include file="include/header.html" -->
+			<?php include "include/header.php" ?>
 
 			<div class="content">
 
-				<!--#include file="include/mobileHeader.html" -->
+				<?php include "include/mobileHeader.php" ?>
 
 				<div class="innerContent">
 					
@@ -1252,8 +1254,8 @@ gBannerSlider.destroy();
 						</div>
 					</div>
 					
-					<!--#include file="include/footer.html" -->
-					<!--#include file="include/popup.html" -->
+					<?php include "include/footer.php" ?>
+					<?php include "include/popup.php" ?>
 					
 				</div>
 				
@@ -1264,7 +1266,7 @@ gBannerSlider.destroy();
 	</div>
 	
 	<!--JS-->
-	<!--#include file="../include/common/include_js.html" -->
+	<?php include "../include/common/include_js.html" ?>
 	
 	<script type="text/javascript">
 		$(document).ready(init_fn);
