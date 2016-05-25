@@ -563,14 +563,14 @@ imgSlider.prototype.slidesOnReady = function ( dir ) {
 				'display': 'block'
 			});
 		}
-
+		
 		if (!_self.defaults.loop) {
 			_self.slides.each(function(i){
 				if( i > _self.current && parseInt( $(this).css('left')) < 0 ){
-					$(this).css({'display': 'none'});
+					$(this).css({'left': _self.slideLeft * (i-_self.current)});
 				}
 				if( i < _self.current && parseInt( $(this).css('left')) > 0 ){
-					$(this).css({'display': 'none'});
+					$(this).css({'left': _self.slideLeft * (i-_self.current) });
 				}
 			});
 		}
