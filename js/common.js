@@ -499,7 +499,8 @@ imgSlider.prototype.slidesOnReady = function ( dir ) {
 
 	_self.resetSlidesCSS();
 	_self.slides.css({
-		'height': ''
+		'height': '',
+		'display': ''
 	});
 	_self.setSliderHeight();
 
@@ -517,50 +518,67 @@ imgSlider.prototype.slidesOnReady = function ( dir ) {
 		_self.slideLeft = _self.sliderContainer.width();
 
 		_self.slides.eq((_self.current + 3) % _self.slides.length).css({
-			'left': _self.slideLeft * 3
+			'left': _self.slideLeft * 3,
+			'display' : 'block'
 		});
 		_self.slides.eq(leftSlidePos3).css({
-			'left': -3 * _self.slideLeft
+			'left': -3 * _self.slideLeft,
+			'display' : 'block'
 		});
 		_self.slides.eq((_self.current + 2) % _self.slides.length).css({
-			'left': _self.slideLeft * 2
+			'left': _self.slideLeft * 2,
+			'display' : 'block'
 		});
 		_self.slides.eq(leftSlidePos2).css({
-			'left': -2 * _self.slideLeft
+			'left': -2 * _self.slideLeft,
+			'display' : 'block'
 		});
 		_self.slides.eq(_self.current).css({
-			'left': 0
+			'left': 0,
+			'display' : 'block'
 		});
 		_self.slides.eq((_self.current + 1) % _self.slides.length).css({
-			'left': _self.slideLeft
+			'left': _self.slideLeft,
+			'display' : 'block'
 		});
 		_self.slides.eq(_self.current).css({
-			'left': 0
+			'left': 0,
+			'display' : 'block'
 		});
 
 		if( dir == 1 ){
 			_self.slides.eq((_self.current + 1) % _self.slides.length).css({
-				'left': _self.slideLeft
+				'left': _self.slideLeft,
+				'display' : 'block'
 			});
 			_self.slides.eq(leftSlidePos).css({
-				'left': -_self.slideLeft
+				'left': -_self.slideLeft,
+				'display' : 'block'
 			});
 		}else{
 			_self.slides.eq(leftSlidePos).css({
-				'left': -_self.slideLeft
+				'left': -_self.slideLeft,
+				'display' : 'block'
 			});
 			_self.slides.eq((_self.current + 1) % _self.slides.length).css({
-				'left': _self.slideLeft
+				'left': _self.slideLeft,
+				'display' : 'block'
 			});
 		}
 
 		if (!_self.defaults.loop) {
 			_self.slides.each(function(i){
 				if( i > _self.current && parseInt( $(this).css('left')) < 0 ){
-					$(this).css({'left': _self.slideLeft * (i-_self.current)});
+					$(this).css({
+						'left': _self.slideLeft * (i-_self.current),
+						'display' : 'block'
+					});
 				}
 				if( i < _self.current && parseInt( $(this).css('left')) > 0 ){
-					$(this).css({'left': _self.slideLeft * (i-_self.current) });
+					$(this).css({
+						'left': _self.slideLeft * (i-_self.current),
+						'display' : 'block'
+					});
 				}
 			});
 		}
