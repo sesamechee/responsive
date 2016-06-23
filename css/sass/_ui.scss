@@ -237,7 +237,7 @@ pre{
 .innerContent{
 	.mobile &,
 	.tablet &{
-		padding-top: 45px;
+		//padding-top: 45px;
 	}
 }
 
@@ -353,15 +353,13 @@ a {
    ========================================================================== */
 .section{
 	position: relative;
-	width: 100%;
-	
-	.sectionInner{
-		position: relative;
-		max-width: $max-desktop-width;
-		margin: 0 auto;
-		padding: 20px;
-		@include box-sizing(border-box);
-	}
+}
+.inner{
+	position: relative;
+	max-width: $max-desktop-width;
+	margin: 0 auto;
+	padding: 20px;
+	@include box-sizing(border-box);
 }
 
 /* ==========================================================================

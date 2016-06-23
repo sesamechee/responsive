@@ -23,12 +23,10 @@
 
 			<div class="content">
 
-				<?php include "include/mobileHeader.php" ?>
-
 				<div class="innerContent">
 					
 					<div class="section bgColor-black-2 aCenter">
-						<div class="sectionInner">
+						<div class="inner">
 							<a href="javascript:scrollto('.section_typo')" class="commonBtn btnStyle3"><span>TYPOGRAPHY</span></a>
 							<a href="javascript:scrollto('.section_iconfont')" class="commonBtn btnStyle3"><span>ICON FONTS</span></a>
 							<a href="javascript:scrollto('.section_edior')" class="commonBtn btnStyle3"><span>EDITOR CSS</span></a>
@@ -43,7 +41,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_typo">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-1-2 vaMiddle">
 									<div class="colInner">
@@ -59,7 +57,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="fLeft col-1-3">
 									<div class="colInner">
@@ -144,7 +142,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_iconfont">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-1-2 vaMiddle">
 									<div class="colInner">
@@ -160,7 +158,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner editor">
+						<div class="inner editor">
 							<h2>USAGE</h2>
 <pre>
 	class="icon-instagram"
@@ -249,7 +247,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_edior">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-1-2 vaMiddle">
 									<div class="colInner">
@@ -265,7 +263,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner editor">
+						<div class="inner editor">
 							<div class="colRow clearFix">
 								<div class="fLeft col-1-3 mobile-100">
 									<div class="colInner">
@@ -394,7 +392,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_color">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-1-2 vaMiddle">
 									<div class="colInner">
@@ -410,7 +408,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner">
+						<div class="inner">
 							<h2 class="color-black-1">color-black-1</h2>
 							<h2 class="color-black-2">color-black-2</h2>
 							<h2 class="color-black-3 bgColor-black-1">color-black-3</h2>
@@ -454,7 +452,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_grid">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-1-2 vaMiddle">
 									<div class="colInner">
@@ -470,7 +468,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="fLeft col-1-2 mobile-100">
 									<div class="colInner">
@@ -619,7 +617,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_gridBox">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-2-3 vaMiddle">
 									<div class="colInner">
@@ -635,7 +633,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="fLeft col-1-3 mobile-100">
 									<div class="gridBox-square">
@@ -783,7 +781,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_formSection">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-1-2 vaMiddle">
 									<div class="colInner">
@@ -799,7 +797,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="fLeft col-1-2 mobile-100">
 									<div class="colInner">
@@ -861,7 +859,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_button">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-1-2 vaMiddle">
 									<div class="colInner">
@@ -877,7 +875,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="fLeft col-1-4 mobile-100">
 									<div class="colInner">
@@ -928,7 +926,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_popup">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-1-2 vaMiddle">
 									<div class="colInner">
@@ -944,7 +942,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner">
+						<div class="inner">
 							<p><a href="javascript:void(0);" onClick="popupBox($('.tncPopup'))">Open tnc popup</a></p>
 							<p><a href="javascript:void(0);" onClick="videoPop('PlcLd_-PI58')">Open youtube video popup</a></p>
 							<p><a href="javascript:void(0);" onClick="alertMsg('Alert Msg Here')">Open alert</a></p>
@@ -952,7 +950,7 @@
 					</div>
 					
 					<div class="section bgColor-black-3 section_slider">
-						<div class="sectionInner">
+						<div class="inner">
 							<div class="colRow clearFix">
 								<div class="col-1-2 vaMiddle">
 									<div class="colInner">
@@ -968,7 +966,7 @@
 					</div>
 					
 					<div class="section">
-						<div class="sectionInner">
+						<div class="inner">
 						
 							<h2 class="aCenter">EXAMPLE - 3 item in a slide</h2>
 						

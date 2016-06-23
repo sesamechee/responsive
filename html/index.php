@@ -23,8 +23,6 @@
 
 			<div class="content">
 
-				<?php include "include/mobileHeader.php" ?>
-
 				<div class="innerContent">
 					
 					<?php echo $i18n['sample'];?>
