@@ -51,7 +51,7 @@ videoPop( youtubeID , config );
 ```
 scrollto('.TARGET');
 ```
-## ImgSlider Usage
+### ImgSlider Usage
 ```
 newSliderName = new imgSlider( $('target'), {
 	speed: 300,
