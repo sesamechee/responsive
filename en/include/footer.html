@@ -4,7 +4,7 @@
 		Footer
 		
 	</div>
-	<a href="javascript:scrollto()" class="btnBackTop icon-arrowUp"></a>
+	<a href="javascript:scrollto()" class="btnBackTop icon-arrowUp" data-grunticon-embed></a>
 </div>
 
 <div class="dimBg"></div>

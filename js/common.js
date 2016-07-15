@@ -10,6 +10,9 @@ function common_init(){
 	detectBroswer();
 	menuControl();
 	
+	//Grunticon init
+	grunticon(["../css/icons.data.svg.css", "../css/icons.data.png.css", "../css/icons.fallback.css"], grunticon.svgLoadedCallback);
+	
 	$(window).load(function(){
 		hideLoading();
 	});
@@ -336,7 +339,9 @@ var imgSlider = function (container, config) {
 
 	_self.container = container;
 
-	_self.init();
+	$(window).on('load', function(){
+		_self.init();
+	});
 };
 
 imgSlider.prototype.init = function () {
@@ -372,10 +377,9 @@ imgSlider.prototype.init = function () {
 	if(_count <= 0) {
 		_self.contentLoaded();
 	} else {
-		_self.slides.find('img').each(function() {
+		_self.slides.find('img').each(function(e) {
 			$("<img/>").load(function() {
 				if( !--_count ) {
-					// callback function here
 					_self.contentLoaded();
 				}
 			}).attr("src", $(this).attr('src'));

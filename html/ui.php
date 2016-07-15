@@ -141,108 +141,111 @@
 						</div>
 					</div>
 					
-					<div class="section bgColor-black-3 section_iconfont">
-						<div class="inner">
-							<div class="colRow clearFix">
-								<div class="col-1-2 vaMiddle">
-									<div class="colInner">
-										<h1>ICON FONTS</h1>
-									</div>
-								</div><div class="col-1-2 vaMiddle aRight">
-									<div class="colInner">
-										<h4>class="icon-*"</h4>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
 					<div class="section">
 						<div class="inner editor">
-							<h2>USAGE</h2>
-<pre>
-	class="icon-instagram"
-</pre>
+							<h1>GRUNTICON</h1>
+							<p>Made by <a href="http://www.grunticon.com/" target="_blank">GRUNTICON</a></p>
+							<div class="col-1-3 fLeft">
+								<div class="colInner">
+									<p><strong>Browsers that render the SVG data url stylesheet:</strong></p>
+									<ul class="disc">
+										<li>IE9</li>
+										<li>Chrome 14+ (maybe older too?)</li>
+										<li>Safari 4+ (maybe older too?)</li>
+										<li>Firefox 3.6+ (maybe older too?)</li>
+										<li>Opera 15+</li>
+										<li>iOS 3+ Safari and Chrome</li>
+										<li>Android 4.0 Chrome (caveat: SVG icons do not scale in vector, but do appear to draw in high-resolution)</li>
+										<li>Android 4.0 ICS Browser</li>
+										<li>BlackBerry Playbook</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-1-3 fLeft">
+								<div class="colInner">
+									<p><strong>Browsers that receive the PNG data url stylesheet:</strong></p>
+									<ul class="disc">
+										<li>IE8</li>
+										<li>All versions of Opera, Opera Mini, and Opera Mobile before Chrome integration (v 15)</li>
+										<li>Android 2.3 Browser</li>
+										<li>Android 2.2 Browser</li>
+										<li>Android 2.1 Browser</li>
+										<li>Android 1.6 Browser</li>
+										<li>Android 1.5 Browser</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-1-3 fLeft">
+								<div class="colInner">
+									<p><strong>Browsers that receive the fallback png request:</strong></p>
+									<ul class="disc">
+										<li>IE7</li>
+										<li>IE6</li>
+										<li>Non-JavaScript environments</li>
+									</ul>
+									<p>MORE: <a href="https://docs.google.com/spreadsheets/d/1rykSntAC2Ke7aDguaOTjz8IORRzNTjwMqO8KviMan2A/edit#gid=0">support spreadsheet</a></p>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="sep"></div>
+							<h1>USAGE</h1>
+							<div class="col-1-2 fLeft aCenter">
+								<div class="colInner">
+									<h2>Data Background</h2>
+									<div class="icon-instagram"></div>
+									<pre>class="icon-instagram"</pre>
+								</div>
+							</div><div class="col-1-2 fRight aCenter">
+								<div class="colInner">
+									<h2>SVG EMBED</h2>
+									<div class="icon-instagram" data-grunticon-embed></div>
+									<pre>class="icon-instagram" data-grunticon-embed</pre>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="col-1-2 fLeft aCenter">
+								<div class="colInner">
+									<h2>SVG COLOR</h2>
+									<div class="icon-instagram color-black-1" data-grunticon-embed></div>
+									<div class="icon-instagram color-black-2" data-grunticon-embed></div>
+									<div class="icon-instagram color-blue-2" data-grunticon-embed></div>
+									<div class="icon-instagram color-blue-1" data-grunticon-embed></div>
+									<pre>class="icon-instagram color-blue-1" data-grunticon-embed</pre>
+								</div>
+							</div>
+							<div class="clear"></div>
 							<div class="sep"></div>
 							<h2>ICON LIST</h2>
 							<table>
 								<tr>
-									<td>
-										<span class="icon-arrowLeft"></span> icon-arrowLeft
-									</td>
-									<td>
-										<span class="icon-arrowRight"></span> icon-arrowRight
-									</td>
-									<td>
-										<span class="icon-arrowUp"></span> icon-arrowUp
-									</td>
+									<td><div class="icon-arrowLeft"></div></td>
+									<td><div class="icon-arrowRight"></div></td>
+									<td><div class="icon-arrowUp"></div></td>
+									<td><div class="icon-arrowDown"></div></td>
+									<td><div class="icon-cross"></div></td>
+									<td><div class="icon-email"></div></td>
 								</tr>
 								<tr>
-									<td>
-										<span class="icon-arrowDown"></span> icon-arrowDown
-									</td>
-									<td>
-										<span class="icon-cross"></span> icon-cross
-									</td>
-									<td>
-										<span class="icon-cross"></span> icon-cross
-									</td>
+									<td><div class="icon-facebook"></div></td>
+									<td><div class="icon-instagram"></div></td>
+									<td><div class="icon-line"></div></td>
+									<td><div class="icon-pin"></div></td>
+									<td><div class="icon-plus"></div></td>
+									<td><div class="icon-reload"></div></td>
 								</tr>
 								<tr>
-									<td>
-										<span class="icon-plus"></span> icon-plus
-									</td>
-									<td>
-										<span class="icon-reload"></span> icon-reload
-									</td>
-									<td>
-										<span class="icon-search"></span> icon-search
-									</td>
+									<td><div class="icon-search"></div></td>
+									<td><div class="icon-share"></div></td>
+									<td><div class="icon-tel"></div></td>
+									<td><div class="icon-tick"></div></td>
+									<td><div class="icon-wechat"></div></td>
+									<td><div class="icon-weibo"></div></td>
 								</tr>
 								<tr>
-									<td>
-										<span class="icon-tel"></span> icon-tel
-									</td>
-									<td>
-										<span class="icon-pin"></span> icon-pin
-									</td>
-									<td>
-										<span class="icon-email"></span> icon-email
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<span class="icon-facebook"></span> icon-facebook
-									</td>
-									<td>
-										<span class="icon-instagram"></span> icon-instagram
-									</td>
-									<td>
-										<span class="icon-wechat"></span> icon-wechat
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<span class="icon-weibo"></span> icon-weibo
-									</td>
-									<td>
-										<span class="icon-whatsapp"></span> icon-whatsapp
-									</td>
-									<td>
-										<span class="icon-youtube"></span> icon-youtube
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<span class="icon-tick"></span> icon-tick
-									</td>
-									<td>
-										<span class="icon-share"></span> icon-share
-									</td>
-									<td></td>
+									<td><div class="icon-whatsapp"></div></td>
+									<td><div class="icon-youtube"></div></td>
 								</tr>
 							</table>
-							
 						</div>
 					</div>
 					
@@ -1225,16 +1228,18 @@
 							<h2>OPTIONS</h2>
 <pre>
 gBannerSlider = new imgSlider( $('target'), {
-	speed: 300,							//speed for transition
+	speed: 300,
 	drag: true,
 	loop: true,
 	autoHeight: false,
 	autoPlay: false,
-	autoPlaySpeed: 5000,				//speed for timeout
+	autoPlaySpeed: 5000,
 	fade: false,
+	offsetWidth: 1,
 	thumbnailCarousel: true,
+	beforeSlideCallback: function(){
+	},
 	afterSlideCallback: function(){
-										//callback when finish transition
 	}
 });
 </pre>
