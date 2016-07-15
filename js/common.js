@@ -58,17 +58,17 @@ function detectBroswer(){
 
 	if (ua.indexOf("msie") != -1){
 		if (ver.indexOf("msie 6.") != -1){
-			IE9down =true
+			IE9down =true;
 		}else if (ver.indexOf("msie 7.") != -1){
-			IE9down =true
+			IE9down =true;
 		}else if (ver.indexOf("msie 8.") != -1){
-			IE9down =true
+			IE9down =true;
 		}else if (ver.indexOf("msie 9.") != -1){
-			IE9down =true
+			IE9down =true;
 		}else if (ver.indexOf("msie 10.") != -1){
-			IE9down =false
+			IE9down =false;
 		}else{
-			IE9down =false
+			IE9down =false;
 		}
 	}
 
@@ -135,7 +135,7 @@ function resize(){
 
 function scroll(){
 	//BacKTop
-	if( $(window).scrollTop() == 0 ){
+	if( $(window).scrollTop() === 0 ){
 		$('.btnBackTop').removeClass('active');
 	}else{
 		$('.btnBackTop').addClass('active');
@@ -148,9 +148,9 @@ function scroll(){
 }
 
 function scrollto( target ){
-	var target = ( target == undefined )? 'body' : target
+	var _target = ( target === undefined )? 'body' : target ;
 	$('html, body').animate({
-		scrollTop: $(target).offset().top
+		scrollTop: $(_target).offset().top
 	},800 , gEasing);
 }
 
