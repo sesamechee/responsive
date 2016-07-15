@@ -17,7 +17,6 @@
 - smoothscroll-for-websites : ~1.4.4 ( Optional )
 
 ## Common Commard
-
 ### Popup Magnific popup box
 ```
 popupBox( $(TARGET), {
@@ -34,30 +33,24 @@ popupBox( $(TARGET), {
 		}
 	}
 });
-
 ```
 ### Popup Alert Msg
 ```
 alertMsg( 'MSG HERE', config);
 ```
-
 ### Popup Youtube Video
 ```
 videoPop( youtubeID , config );
 ```
-
 ### Inview effect
 ```
 > It will add a class "play" when inview
 <div class="invew"></div>
 ```
-
 ### Scroll to target function
 ```
 scrollto('.TARGET');
 ```
-
-
 ## ImgSlider Usage
 ```
 newSliderName = new imgSlider( $('target'), {
