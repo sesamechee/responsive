@@ -14,7 +14,16 @@ function common_init(){
 	grunticon(["../css/icons.data.svg.css", "../css/icons.data.png.css", "../css/icons.fallback.css"], grunticon.svgLoadedCallback);
 	
 	$(window).load(function(){
-		hideLoading();
+		hideLoading(function(){
+			//Inview
+			$('body').on('inview', '.inview', function(event, isInView) {
+				if (isInView) {
+					$(this).addClass('play');
+				} else {
+					//$(this).removeClass('play');
+				}
+			});
+		});
 	});
 	
 	$(window).on('resize', function(){
@@ -83,8 +92,8 @@ function showLoading(){
 	$('.loading').stop().fadeIn(300);
 }
 
-function hideLoading(){
-	$('.loading').stop().fadeOut(300);
+function hideLoading(callback){
+	$('.loading').stop().fadeOut(500, callback );
 }
 
 function dimBgShow(){
@@ -161,6 +170,9 @@ function popupBox( target , config ) {
 		callbacks:{
 			open: function(){
 
+			},
+			close: function(){
+
 			}
 		}
 	};
@@ -172,7 +184,7 @@ function popupBox( target , config ) {
 function alertMsg( msg , config ) {
 	$('.alertPopup .popupContent').html(msg);
 
-	popupBox($('.alertPopup'));
+	popupBox($('.alertPopup'), config);
 }
 
 function videoPop( youtubeID , config ) {
@@ -186,7 +198,8 @@ function videoPop( youtubeID , config ) {
 			}
 		}
 	};
-
+	
+	$.extend(_settings, config);
 	popupBox($('.videoPopup'), _settings);
 }
 
