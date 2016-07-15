@@ -852,7 +852,7 @@
 										<div class="inputBox checkRow">
 											<label>
 												<input type="checkbox">
-												<span class="checkbox"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla.
+												<span class="checkbox"><span class="icon-tick"></span></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla.
 											</label>
 										</div>
 									</div>

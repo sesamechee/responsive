@@ -555,18 +555,15 @@ input[type="checkbox"] {
 	border: 1px solid color(black, 1);
 	overflow: hidden;
 }
-input[type="checkbox"] + .checkbox:before {
-	font-family: 'fontIcon';
-	content: '\0052';
-	font-size: 20px;
-	line-height: 20px;
+input[type="checkbox"] + .checkbox [class*="icon-"] {
 	width: 0;
 	height: 100%;
+	background-size: auto 100%;
 	display: inline-block;
 	@include transition(width 0.3s);
 	overflow: hidden;
 }
-input[type="checkbox"]:checked + .checkbox:before {
+input[type="checkbox"]:checked + .checkbox [class*="icon-"] {
 	width: 100%;
 }
 

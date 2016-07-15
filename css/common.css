@@ -1972,13 +1972,10 @@ input[type="checkbox"] {
 }
 
 /* line 558, sass/_ui.scss */
-input[type="checkbox"] + .checkbox:before {
-  font-family: 'fontIcon';
-  content: '\0052';
-  font-size: 20px;
-  line-height: 20px;
+input[type="checkbox"] + .checkbox [class*="icon-"] {
   width: 0;
   height: 100%;
+  background-size: auto 100%;
   display: inline-block;
   -moz-transition: width 0.3s;
   -o-transition: width 0.3s;
@@ -1987,12 +1984,12 @@ input[type="checkbox"] + .checkbox:before {
   overflow: hidden;
 }
 
-/* line 569, sass/_ui.scss */
-input[type="checkbox"]:checked + .checkbox:before {
+/* line 566, sass/_ui.scss */
+input[type="checkbox"]:checked + .checkbox [class*="icon-"] {
   width: 100%;
 }
 
-/* line 573, sass/_ui.scss */
+/* line 570, sass/_ui.scss */
 input[type="radio"] {
   position: absolute;
   visibility: hidden;
@@ -2000,7 +1997,7 @@ input[type="radio"] {
   height: 0;
 }
 
-/* line 579, sass/_ui.scss */
+/* line 576, sass/_ui.scss */
 .radiobox {
   position: relative;
   display: inline-block;
@@ -2020,7 +2017,7 @@ input[type="radio"] {
   overflow: hidden;
 }
 
-/* line 593, sass/_ui.scss */
+/* line 590, sass/_ui.scss */
 input[type="radio"] + .radiobox:before {
   content: '';
   width: 100%;
@@ -2040,7 +2037,7 @@ input[type="radio"] + .radiobox:before {
   transform: scale(0);
 }
 
-/* line 603, sass/_ui.scss */
+/* line 600, sass/_ui.scss */
 input[type="radio"]:checked + .radiobox:before {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -2051,72 +2048,72 @@ input[type="radio"]:checked + .radiobox:before {
 /* ==========================================================================
    COLOR
    ========================================================================== */
-/* line 615, sass/_ui.scss */
+/* line 612, sass/_ui.scss */
 .color-black-1 {
   color: #666;
 }
-/* line 618, sass/_ui.scss */
+/* line 615, sass/_ui.scss */
 .color-black-1 svg path {
   fill: #666;
 }
 
-/* line 623, sass/_ui.scss */
+/* line 620, sass/_ui.scss */
 .bgColor-black-1 {
   background-color: #666;
 }
 
-/* line 615, sass/_ui.scss */
+/* line 612, sass/_ui.scss */
 .color-black-2 {
   color: #999;
 }
-/* line 618, sass/_ui.scss */
+/* line 615, sass/_ui.scss */
 .color-black-2 svg path {
   fill: #999;
 }
 
-/* line 623, sass/_ui.scss */
+/* line 620, sass/_ui.scss */
 .bgColor-black-2 {
   background-color: #999;
 }
 
-/* line 615, sass/_ui.scss */
+/* line 612, sass/_ui.scss */
 .color-black-3 {
   color: #f8f8f8;
 }
-/* line 618, sass/_ui.scss */
+/* line 615, sass/_ui.scss */
 .color-black-3 svg path {
   fill: #f8f8f8;
 }
 
-/* line 623, sass/_ui.scss */
+/* line 620, sass/_ui.scss */
 .bgColor-black-3 {
   background-color: #f8f8f8;
 }
 
-/* line 615, sass/_ui.scss */
+/* line 612, sass/_ui.scss */
 .color-blue-1 {
   color: #0000ff;
 }
-/* line 618, sass/_ui.scss */
+/* line 615, sass/_ui.scss */
 .color-blue-1 svg path {
   fill: #0000ff;
 }
 
-/* line 623, sass/_ui.scss */
+/* line 620, sass/_ui.scss */
 .bgColor-blue-1 {
   background-color: #0000ff;
 }
 
-/* line 615, sass/_ui.scss */
+/* line 612, sass/_ui.scss */
 .color-blue-2 {
   color: #a1c3e5;
 }
-/* line 618, sass/_ui.scss */
+/* line 615, sass/_ui.scss */
 .color-blue-2 svg path {
   fill: #a1c3e5;
 }
 
-/* line 623, sass/_ui.scss */
+/* line 620, sass/_ui.scss */
 .bgColor-blue-2 {
   background-color: #a1c3e5;
 }
@@ -2124,7 +2121,7 @@ input[type="radio"]:checked + .radiobox:before {
 /* ==========================================================================
    BUTTON
    ========================================================================== */
-/* line 632, sass/_ui.scss */
+/* line 629, sass/_ui.scss */
 .commonBtn {
   position: relative;
   display: inline-block;
@@ -2140,15 +2137,15 @@ input[type="radio"]:checked + .radiobox:before {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 644, sass/_ui.scss */
+/* line 641, sass/_ui.scss */
 .mobile .commonBtn {
   display: block;
 }
-/* line 648, sass/_ui.scss */
+/* line 645, sass/_ui.scss */
 .commonBtn span {
   position: relative;
 }
-/* line 651, sass/_ui.scss */
+/* line 648, sass/_ui.scss */
 .commonBtn:before {
   content: "";
   position: absolute;
@@ -2163,45 +2160,45 @@ input[type="radio"]:checked + .radiobox:before {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 662, sass/_ui.scss */
+/* line 659, sass/_ui.scss */
 .commonBtn:hover {
   color: #fff;
   border-color: #666;
 }
-/* line 666, sass/_ui.scss */
+/* line 663, sass/_ui.scss */
 .commonBtn:hover:before {
   top: 0;
 }
 
-/* line 671, sass/_ui.scss */
+/* line 668, sass/_ui.scss */
 .btnStyle1 {
   border: 2px solid #000;
   color: #fff;
   background: #000;
 }
-/* line 676, sass/_ui.scss */
+/* line 673, sass/_ui.scss */
 .btnStyle1:before {
   background: #666;
 }
 
-/* line 681, sass/_ui.scss */
+/* line 678, sass/_ui.scss */
 .btnStyle2 {
   border: 2px solid #fff;
   color: #000;
   background: #fff;
 }
-/* line 686, sass/_ui.scss */
+/* line 683, sass/_ui.scss */
 .btnStyle2:before {
   background: #666;
 }
 
-/* line 691, sass/_ui.scss */
+/* line 688, sass/_ui.scss */
 .btnStyle3 {
   border: 2px solid #fff;
   color: #fff;
   background: none;
 }
-/* line 696, sass/_ui.scss */
+/* line 693, sass/_ui.scss */
 .btnStyle3:before {
   background: #666;
 }
