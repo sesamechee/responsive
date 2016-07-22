@@ -52,7 +52,7 @@
 		width: 30px;
 		height: 30px;
 		@include transition(all 0.4s);
-		
+
 		&:hover {
 			@include scale(0.8);
 		}
@@ -74,7 +74,7 @@
 		}
 
 		&:after {
-			@include transform( rotate(-45deg) );	
+			@include transform( rotate(-45deg) );
 		}
 	}
 }
@@ -84,7 +84,7 @@
    ========================================================================== */
 .alertPopup{
 	text-align: center;
-	
+
 	.popupContent{
 		padding: 100px 20px;
 	}
@@ -98,7 +98,7 @@
 	.responsive760 &{
 		max-width: 1000px;
 	}
-		
+
 	.videoWrapper {
 		position: relative;
 		padding-bottom: 56.25%;
@@ -106,8 +106,8 @@
 		height: 0;
 		overflow: hidden;
 
-		iframe,  
-		object,  
+		iframe,
+		object,
 		embed {
 			position: absolute;
 			top: 0;
@@ -116,5 +116,5 @@
 			height: 100%;
 		}
 	}
-	
+
 }

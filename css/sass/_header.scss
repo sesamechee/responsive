@@ -1,6 +1,6 @@
 /* ==========================================================================
    HEADER
-   ========================================================================== */     
+   ========================================================================== */
 .headerWrapper {
 	position: relative;
 	margin: 0 auto;
@@ -70,7 +70,7 @@
 
 .menuList{
 	background-color: #eee;
-	
+
 	.mobile &,
 	.tablet & {
 		position: absolute;
@@ -84,7 +84,7 @@
 		position: relative;
 		top: 0;
 	}
-	
+
 	.menuItem{
 		display: inline-block;
 		padding: 15px;

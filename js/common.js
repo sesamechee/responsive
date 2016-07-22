@@ -6,13 +6,13 @@ var gEasing = "easeInOutQuint";
 function common_init(){
 
 	new responsive();
-	
+
 	detectBroswer();
 	menuControl();
-	
+
 	//Grunticon init
 	grunticon(["../css/icons.data.svg.css", "../css/icons.data.png.css", "../css/icons.fallback.css"], grunticon.svgLoadedCallback);
-	
+
 	$(window).load(function(){
 		hideLoading(function(){
 			//Inview
@@ -25,26 +25,26 @@ function common_init(){
 			});
 		});
 	});
-	
+
 	$(window).on('resize', function(){
 		resize();
 	});
-	
+
 	$(window).on('responsive',function(){
 		resetLayout();
 	});
-	
+
 	$(window).on('scroll',function(){
 		scroll();
 	});
-	
+
 	//form
 	$('select').selectric();
 	$('.inputBox').each(function(){
 		inputBox = new InputHints();
 		inputBox.init( $(this) );
 	});
-	
+
 }
 
 function detectBroswer(){
@@ -82,7 +82,7 @@ function detectBroswer(){
 
 	if ( IE9down ) {
 		jQuery.fx.interval = 1000 / 30;
-	} else {		
+	} else {
 		jQuery.fx.interval = 1000 / 60;
 	}
 
@@ -120,7 +120,7 @@ function menuControl(){
 		$('.content').attr('style','');
 		dimBgHide();
 	});
-	
+
 }
 
 function resetLayout(){
@@ -198,7 +198,7 @@ function videoPop( youtubeID , config ) {
 			}
 		}
 	};
-	
+
 	$.extend(_settings, config);
 	popupBox($('.videoPopup'), _settings);
 }
@@ -290,20 +290,20 @@ InputHints.prototype.destroy = function()
 	this.mInputHints.children(".hints").unbind("click");
 	this.mInputHints.children("input, textarea").unbind("focus");
 	this.mInputHints.children("input, textarea").unbind("blur");
-	
+
 	this.mInputHints = null;
 }
 
 InputHints.prototype.init = function(pTarget, pParam_obj)
 {
 	var _self = this;
-	
+
 	this.mInputHints = pTarget;
-	
+
 	this.mInputHints.children(".hints").bind("click", function(){_self.doFocusBegin()});
 	this.mInputHints.children("input, textarea").bind("focus", function(){_self.focusBegin()});
 	this.mInputHints.children("input, textarea").bind("blur", function(){_self.focusEnd()});
-	
+
 	this.mInputHints.children(".hints").css("display", "none");
 	this.focusEnd();
 }

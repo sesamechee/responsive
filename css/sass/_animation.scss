@@ -4,7 +4,7 @@
 .spinner{
 	@include animation( spinner 700ms infinite linear );
 }
-	
+
 @include keyframes(spinner) {
 	0% {
 		@include transform(rotate(0deg));

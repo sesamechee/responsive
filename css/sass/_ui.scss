@@ -1,4 +1,4 @@
-html, 
+html,
 body{
 	background-color: #fff;
 	width: 100%;
@@ -19,7 +19,7 @@ select {
 
 /* ==========================================================================
    FONTS
-   ========================================================================== */        
+   ========================================================================== */
 @include font-face('OpenSans',
   font-files(
     '../font/OpenSans-Light.woff', 'woff',
@@ -44,7 +44,7 @@ select {
 	width: 50px;
 	height: 50px;
 	background-size: 100% auto;
-	
+
 	svg{
 		display: block;
 		width: 100%;
@@ -85,12 +85,12 @@ pre{
 .clearFix {
 	zoom:1;
 }
-.clearFix:after { 
+.clearFix:after {
 	clear:both;
-	display:block; 
+	display:block;
 	visibility:hidden;
-	height:0; 
-	line-height:0; 
+	height:0;
+	line-height:0;
 	content:"";
 }
 .hide,
@@ -162,18 +162,18 @@ pre{
 
 /* ==========================================================================
    WRAPPER
-   ========================================================================== */  
+   ========================================================================== */
 .wrapper{
 	position: relative;
 	overflow: visible;
 	width: 100%;
 	height: 100%;
-	
+
 	.desktop &,
 	.tablet &{
 		min-width: $min-desktop-width;
 	}
-	
+
 	.mobile &{
 		min-width: $min-mobile-width;
 	}
@@ -182,7 +182,7 @@ pre{
 .content{
 	margin: 0 auto;
 	background-color: #fff;
-	
+
 	.mobile.menuOpen &,
 	.tablet.menuOpen &{
 		position: absolute;
@@ -210,7 +210,7 @@ pre{
 
 /* ==========================================================================
    LOADING
-   ========================================================================== */     
+   ========================================================================== */
 .loading{
 	position: fixed;
 	width: 100%;
@@ -218,7 +218,7 @@ pre{
 	left: 0;
 	top: 0;
 	background-color: #fff;
-	
+
 	.loader{
 		position: absolute;
 		width: 50px;
@@ -258,10 +258,10 @@ pre{
 	font-size: $font-size-mobile-body;
 	line-height: 1.5em;
 }
-	
+
 h1 {
 	line-height: 1.5em;
-	
+
 	.desktop &,
 	.tablet & {
 		font-size: $font-size-desktop-h1;
@@ -272,7 +272,7 @@ h1 {
 }
 h2 {
 	line-height: 1.5em;
-	
+
 	.desktop &,
 	.tablet & {
 		font-size: $font-size-desktop-h2;
@@ -283,7 +283,7 @@ h2 {
 }
 h3 {
 	line-height: 1.5em;
-	
+
 	.desktop &,
 	.tablet & {
 		font-size: $font-size-desktop-h3;
@@ -294,7 +294,7 @@ h3 {
 }
 p {
 	line-height: 1.5em;
-	
+
 	.desktop &,
 	.tablet & {
 		font-size: $font-size-desktop-body;
@@ -304,7 +304,7 @@ p {
 	}
 	a{
 		text-decoration: underline;
-		
+
 		&:hover{
 			text-decoration: none;
 		}
@@ -402,7 +402,7 @@ a {
 	padding: 0;
 	margin: auto;
 	background-size: cover;
-	
+
 	&.padding{
 		top: 4px;
 		left: 4px;
@@ -480,7 +480,7 @@ select{
 	@include box-sizing(border-box);
 	@include transition(all 200ms);
 	-webkit-appearance: none;
-	
+
 	.desktop &,
 	.tablet &{
 		font-size: $font-size-desktop-body;
@@ -514,7 +514,7 @@ select:hover{
 	position: relative;
 	margin: 0 0 20px;
 	line-height: $input-height;
-	
+
 	.hints {
 		position: absolute;
 		top: 0;
@@ -522,7 +522,7 @@ select:hover{
 		line-height: $input-height;
 		cursor: text;
 		color: color(black,1);
-		
+
 		.desktop &,
 		.tablet &{
 			font-size: $font-size-desktop-body;
@@ -603,7 +603,7 @@ input[type="radio"]:checked + .radiobox:before {
 
 /* ==========================================================================
    COLOR
-   ========================================================================== */                     
+   ========================================================================== */
 // .color-blue-1 to .color-blue-2
 // .bgColor-blue-1 to .bgColor-blue-2
 
@@ -611,7 +611,7 @@ input[type="radio"]:checked + .radiobox:before {
 	@for $i from 0 to length($array) {
 		.color-#{""+$color-group}-#{$i+1} {
 			color: nth($array, $i+1);
-			
+
 			svg path{
 				fill: nth($array, $i+1);
 			}
@@ -625,7 +625,7 @@ input[type="radio"]:checked + .radiobox:before {
 
 /* ==========================================================================
    BUTTON
-   ========================================================================== */                                
+   ========================================================================== */
 .commonBtn {
 	position: relative;
 	display: inline-block;
@@ -637,11 +637,11 @@ input[type="radio"]:checked + .radiobox:before {
 	text-align: center;
 	overflow: hidden;
 	@include transition(all 0.3s);
-	
+
 	.mobile &{
 		display: block;
 	}
-	
+
 	span{
 		position: relative;
 	}
@@ -669,7 +669,7 @@ input[type="radio"]:checked + .radiobox:before {
 	border: 2px solid #000;
 	color: #fff;
 	background: #000;
-	
+
 	&:before {
 		background: #666;
 	}
@@ -679,7 +679,7 @@ input[type="radio"]:checked + .radiobox:before {
 	border: 2px solid #fff;
 	color: #000;
 	background: #fff;
-	
+
 	&:before {
 		background: #666;
 	}
@@ -689,7 +689,7 @@ input[type="radio"]:checked + .radiobox:before {
 	border: 2px solid #fff;
 	color: #fff;
 	background: none;
-	
+
 	&:before {
 		background: #666;
 	}
